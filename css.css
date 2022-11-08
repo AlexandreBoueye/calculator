@@ -1,0 +1,36 @@
+h1 {
+    text-align: center;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded, Arial, Helvetica, sans-serif;
+    font-weight: normal;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, rgb(31, 85, 185), rgb(211, 12, 204));
+    }
+
+    .container {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        grid-template-columns: repeat(4, 100px);
+        grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+        }
+
+        .container > button {
+            cursor: pointer;
+            font-size: 2rem;
+            border: 1px, solid #FFFFFF;
+            border-radius: 10px 5% / 20px 30px;
+            
+            background-color: rbga(255, 255, 255, 0.75);
+          }
+      
+            .container > button:hover {
+              background-color: #0496eb;
+            }
